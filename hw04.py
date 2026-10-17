@@ -10,7 +10,16 @@ secret_word = "food"
 # Task 1
 def check_text():
     """ Add your docstring """
-    pass
+    user_input = input("Give me a sentence: ")
+    if secret_word in user_input:
+        print("You used the secret word!")
+    elif "dog" in user_input:
+        print('You used the word "dog" or the word "Dog"!')
+    elif "Dog" in user_input:
+        print('You used the word "dog" or the word "Dog"!')
+    else:
+        print("Try again")
+    
 
 
 
